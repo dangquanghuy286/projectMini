@@ -11,9 +11,9 @@ function Login() {
         const email = e.target[0].value;
         const password = e.target[1].value;
         const res = await login(email, password);
-        console.log(res);
+
         if (res.length > 0) {
-            console.log(res);
+
             setCookie("id", res[0].id, 1)
             setCookie("fullname", res[0].fullname, 1)
             setCookie("email", res[0].email, 1)

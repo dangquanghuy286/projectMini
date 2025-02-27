@@ -4,7 +4,7 @@ import { getCookie } from "../helpers/cookie";
 import { useSelector } from "react-redux"
 function LayoutDefault() {
     const token = getCookie("token");
-    const isLogin = useSelector(state => state.loginReducer)
+    const isLogin = useSelector(state => state.loginReducer);
     console.log(isLogin);
 
     return (
