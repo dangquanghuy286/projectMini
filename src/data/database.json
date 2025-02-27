@@ -1,544 +1,530 @@
 {
-  "users": [
-    {
-      "id": "1",
-      "fullname": "Nguyễn Văn A",
-      "email": "nguyenvana@example.com",
-      "password": "123456",
-      "token": "abc123"
-    },
-    {
-      "id": "2",
-      "fullname": "Trần Thị B",
-      "email": "tranthib@example.com",
-      "password": "654321",
-      "token": "def456"
-    },
-    {
-      "id": "d10c",
-      "fullname": "Đặng Hữu Quang Huy",
-      "email": "huydang.280603@gmail.com",
-      "password": "huyhuyhuy111",
-      "token": "VJr43UuKsdSKFtJCtAkp"
-    },
-    {
-      "id": "cab4",
-      "fullname": "Đặng Hữu Quang Huy",
-      "email": "huy.280603@gmail.com",
-      "password": "huyhuyhuy111",
-      "token": "ebMy6nMYJ7f4kmhGVrxm"
-    },
-    {
-      "id": "2f40",
-      "fullname": "Đặng Hữu Quang Huy",
-      "email": "huy1.280603@gmail.com",
-      "password": "huyhuyhuy111",
-      "token": "JLNMncgcxdGk6HZLx7jg"
-    }
-  ],
-  "topics": [
-    {
-      "id": "1",
-      "name": "Lập trình ReactJS"
-    },
-    {
-      "id": "2",
-      "name": "Lập trình NodeJS"
-    },
-    {
-      "id": "3",
-      "name": "Cơ sở dữ liệu"
-    },
-    {
-      "id": "4",
-      "name": "Thuật toán"
-    },
-    {
-      "id": "5",
-      "name": "Phỏng vấn Frontend"
-    }
-  ],
-  "questions": [
-    {
-      "id": "1",
-      "topicId": 1,
-      "question": "React là gì?",
-      "answers": [
-        "Thư viện JS",
-        "Ngôn ngữ lập trình",
-        "Framework",
-        "Cơ sở dữ liệu"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "2",
-      "topicId": 1,
-      "question": "JSX dùng để làm gì?",
-      "answers": [
-        "Viết HTML trong JS",
-        "Gọi API",
-        "Kết nối CSDL",
-        "Chạy server"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "3",
-      "topicId": 1,
-      "question": "Hook nào dùng để quản lý state?",
-      "answers": [
-        "useState",
-        "useEffect",
-        "useContext",
-        "useRef"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "4",
-      "topicId": 1,
-      "question": "Component nào trong React có thể tái sử dụng?",
-      "answers": [
-        "Function Component",
-        "Class Component",
-        "Cả hai",
-        "Không có cái nào"
-      ],
-      "correctAnswer": 2
-    },
-    {
-      "id": "5",
-      "topicId": 1,
-      "question": "Redux dùng để làm gì?",
-      "answers": [
-        "Quản lý state",
-        "Gọi API",
-        "Kết nối database",
-        "Xử lý giao diện"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "6",
-      "topicId": 2,
-      "question": "NodeJS là gì?",
-      "answers": [
-        "Môi trường chạy JS",
-        "Ngôn ngữ lập trình",
-        "Framework của PHP",
-        "Công cụ thiết kế"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "7",
-      "topicId": 2,
-      "question": "ExpressJS là gì?",
-      "answers": [
-        "Framework của NodeJS",
-        "Thư viện React",
-        "Database",
-        "Giao thức HTTP"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "8",
-      "topicId": 2,
-      "question": "Middleware trong ExpressJS dùng để làm gì?",
-      "answers": [
-        "Xử lý yêu cầu trước khi vào route",
-        "Gửi email",
-        "Lưu dữ liệu",
-        "Tạo giao diện"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "9",
-      "topicId": 2,
-      "question": "Cách nào để đọc dữ liệu từ request body trong Express?",
-      "answers": [
-        "req.body",
-        "req.params",
-        "req.query",
-        "req.url"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "10",
-      "topicId": 2,
-      "question": "Mongoose dùng để làm gì?",
-      "answers": [
-        "Kết nối MongoDB",
-        "Chạy server",
-        "Tạo frontend",
-        "Xử lý UI"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "11",
-      "topicId": 3,
-      "question": "SQL là gì?",
-      "answers": [
-        "Ngôn ngữ truy vấn",
-        "Công cụ lập trình",
-        "Framework",
-        "Ngôn ngữ thiết kế"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "12",
-      "topicId": 3,
-      "question": "Lệnh nào dùng để lấy tất cả dữ liệu từ bảng?",
-      "answers": [
-        "SELECT *",
-        "GET ALL",
-        "FETCH",
-        "SHOW ALL"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "13",
-      "topicId": 3,
-      "question": "Khóa chính (Primary Key) dùng để làm gì?",
-      "answers": [
-        "Xác định duy nhất một dòng",
-        "Lưu trữ dữ liệu",
-        "Gán giá trị mặc định",
-        "Tạo index"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "14",
-      "topicId": 3,
-      "question": "Câu lệnh nào để xóa bảng trong SQL?",
-      "answers": [
-        "DROP TABLE",
-        "DELETE TABLE",
-        "REMOVE TABLE",
-        "CLEAR TABLE"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "15",
-      "topicId": 3,
-      "question": "Câu lệnh nào để thêm dữ liệu vào bảng?",
-      "answers": [
-        "INSERT INTO",
-        "ADD DATA",
-        "PUT DATA",
-        "STORE"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "16",
-      "topicId": 4,
-      "question": "Thuật toán sắp xếp nào nhanh nhất?",
-      "answers": [
-        "Quick Sort",
-        "Bubble Sort",
-        "Selection Sort",
-        "Insertion Sort"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "17",
-      "topicId": 4,
-      "question": "Big-O của thuật toán tìm kiếm nhị phân là gì?",
-      "answers": [
-        "O(log n)",
-        "O(n)",
-        "O(n^2)",
-        "O(1)"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "18",
-      "topicId": 4,
-      "question": "Cấu trúc dữ liệu nào hoạt động theo nguyên tắc LIFO?",
-      "answers": [
-        "Stack",
-        "Queue",
-        "Linked List",
-        "Tree"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "19",
-      "topicId": 4,
-      "question": "Cấu trúc dữ liệu nào hoạt động theo nguyên tắc FIFO?",
-      "answers": [
-        "Queue",
-        "Stack",
-        "Tree",
-        "Graph"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "20",
-      "topicId": 4,
-      "question": "Độ phức tạp trung bình của thuật toán Quick Sort là bao nhiêu?",
-      "answers": [
-        "O(n log n)",
-        "O(n^2)",
-        "O(n)",
-        "O(1)"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "21",
-      "topicId": 5,
-      "question": "Sự khác nhau giữa var, let và const trong JavaScript?",
-      "answers": [
-        "var có phạm vi function, let và const có phạm vi block.",
-        "var và let giống nhau, const khác hoàn toàn.",
-        "const có thể thay đổi giá trị sau khi khai báo.",
-        "let và const không thể dùng trong function."
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "22",
-      "topicId": 5,
-      "question": "React sử dụng cơ chế nào để tối ưu hóa việc cập nhật DOM?",
-      "answers": [
-        "Virtual DOM",
-        "Real DOM",
-        "Shadow DOM",
-        "Server-side Rendering"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "23",
-      "topicId": 5,
-      "question": "Hook nào trong React dùng để thực hiện side effects?",
-      "answers": [
-        "useEffect",
-        "useState",
-        "useReducer",
-        "useContext"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "24",
-      "topicId": 5,
-      "question": "CSS Flexbox có thuộc tính nào để căn giữa phần tử theo cả chiều dọc và ngang?",
-      "answers": [
-        "align-items và justify-content",
-        "display: block",
-        "grid-template-columns",
-        "position: absolute"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "25",
-      "topicId": 5,
-      "question": "Cách nào để gửi request API trong JavaScript?",
-      "answers": [
-        "fetch()",
-        "console.log()",
-        "document.querySelector()",
-        "setTimeout()"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "26",
-      "topicId": 5,
-      "question": "Cách nào để lưu trạng thái trong React mà không gây re-render?",
-      "answers": [
-        "useRef",
-        "useState",
-        "useEffect",
-        "useReducer"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "27",
-      "topicId": 5,
-      "question": "JavaScript có kiểu dữ liệu nào?",
-      "answers": [
-        "Number, String, Boolean, Object, Undefined, Null, Symbol, BigInt",
-        "Integer, Float, Char, Double",
-        "Object-Oriented, Functional",
-        "Primary, Secondary"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "28",
-      "topicId": 5,
-      "question": "Event nào dùng để bắt sự kiện khi người dùng nhập dữ liệu vào ô input?",
-      "answers": [
-        "onChange",
-        "onClick",
-        "onSubmit",
-        "onMouseOver"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "29",
-      "topicId": 5,
-      "question": "Cách nào để import module trong ES6?",
-      "answers": [
-        "import { moduleName } from 'file.js'",
-        "require('file.js')",
-        "include 'file.js'",
-        "load('file.js')"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "30",
-      "topicId": 5,
-      "question": "React Router dùng để làm gì?",
-      "answers": [
-        "Quản lý điều hướng trang",
-        "Tạo giao diện động",
-        "Xử lý state",
-        "Gửi request API"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "31",
-      "topicId": 5,
-      "question": "Cách nào để thêm class vào một phần tử trong React?",
-      "answers": [
-        "className",
-        "class",
-        "style",
-        "addClass()"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "32",
-      "topicId": 5,
-      "question": "State trong React có thể thay đổi trực tiếp không?",
-      "answers": [
-        "Không, phải dùng setState hoặc useState",
-        "Có, có thể thay đổi trực tiếp",
-        "Chỉ thay đổi trong componentDidMount",
-        "Không thể thay đổi"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "33",
-      "topicId": 5,
-      "question": "Cách nào để tạo component trong React?",
-      "answers": [
-        "Function Component hoặc Class Component",
-        "HTML file",
-        "JSON file",
-        "CSS file"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "34",
-      "topicId": 5,
-      "question": "Cách nào để truyền dữ liệu từ component cha xuống component con?",
-      "answers": [
-        "Props",
-        "State",
-        "Redux",
-        "useEffect"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "35",
-      "topicId": 5,
-      "question": "React Context API dùng để làm gì?",
-      "answers": [
-        "Chia sẻ dữ liệu giữa các component",
-        "Lưu trữ dữ liệu trên server",
-        "Kết nối với cơ sở dữ liệu",
-        "Quản lý vòng đời component"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "36",
-      "topicId": 5,
-      "question": "Cách nào để thực hiện lazy loading trong React?",
-      "answers": [
-        "React.lazy() và Suspense",
-        "useEffect",
-        "useState",
-        "import()"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "37",
-      "topicId": 5,
-      "question": "Cách nào để cập nhật state trong React mà không gây vấn đề về đồng bộ?",
-      "answers": [
-        "Sử dụng callback trong setState",
-        "Gán giá trị trực tiếp",
-        "Dùng biến toàn cục",
-        "Không thể cập nhật"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "38",
-      "topicId": 5,
-      "question": "Hàm map() trong JavaScript dùng để làm gì?",
-      "answers": [
-        "Duyệt và tạo mảng mới từ mảng cũ",
-        "Xóa phần tử trong mảng",
-        "Tìm phần tử trong mảng",
-        "Sắp xếp mảng"
-      ],
-      "correctAnswer": 0
-    },
-    {
-      "id": "39",
-      "topicId": 5,
-      "question": "Sự khác nhau giữa == và === trong JavaScript?",
-      "answers": [
-        "== chỉ so sánh giá trị, === so sánh cả kiểu dữ liệu",
-        "== nhanh hơn ===",
-        "Không có sự khác biệt",
-        "=== chỉ dùng trong ES6"
-      ],
-      "correctAnswer": 0
-    }
-  ],
-  "answers": [
-    {
-      "userId": 5,
-      "topicId": 1,
-      "answers": [
+    "users": [
         {
-          "questionId": 1,
-          "answer": 1
+            "id": "1",
+            "fullname": "Nguyễn Văn A",
+            "email": "nguyenvana@example.com",
+            "password": "123456",
+            "token": "abc123"
+        },
+        {
+            "id": "2",
+            "fullname": "Trần Thị B",
+            "email": "tranthib@example.com",
+            "password": "654321",
+            "token": "def456"
+        },
+        {
+            "id": "d10c",
+            "fullname": "Đặng Hữu Quang Huy",
+            "email": "huydang.280603@gmail.com",
+            "password": "huyhuyhuy111",
+            "token": "VJr43UuKsdSKFtJCtAkp"
         }
-      ],
-      "id": "1"
-    }
-  ]
+    ],
+    "topics": [
+        {
+            "id": "1",
+            "name": "Lập trình ReactJS"
+        },
+        {
+            "id": "2",
+            "name": "Lập trình NodeJS"
+        },
+        {
+            "id": "3",
+            "name": "Cơ sở dữ liệu"
+        },
+        {
+            "id": "4",
+            "name": "Thuật toán"
+        },
+        {
+            "id": "5",
+            "name": "Phỏng vấn Frontend"
+        }
+    ],
+    "questions": [
+        {
+            "id": "1",
+            "topicId": 1,
+            "question": "React là gì?",
+            "answers": [
+                "Thư viện JS",
+                "Ngôn ngữ lập trình",
+                "Framework",
+                "Cơ sở dữ liệu"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "2",
+            "topicId": 1,
+            "question": "JSX dùng để làm gì?",
+            "answers": [
+                "Viết HTML trong JS",
+                "Gọi API",
+                "Kết nối CSDL",
+                "Chạy server"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "3",
+            "topicId": 1,
+            "question": "Hook nào dùng để quản lý state?",
+            "answers": [
+                "useState",
+                "useEffect",
+                "useContext",
+                "useRef"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "4",
+            "topicId": 1,
+            "question": "Component nào trong React có thể tái sử dụng?",
+            "answers": [
+                "Function Component",
+                "Class Component",
+                "Cả hai",
+                "Không có cái nào"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "id": "5",
+            "topicId": 1,
+            "question": "Redux dùng để làm gì?",
+            "answers": [
+                "Quản lý state",
+                "Gọi API",
+                "Kết nối database",
+                "Xử lý giao diện"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "6",
+            "topicId": 2,
+            "question": "NodeJS là gì?",
+            "answers": [
+                "Môi trường chạy JS",
+                "Ngôn ngữ lập trình",
+                "Framework của PHP",
+                "Công cụ thiết kế"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "7",
+            "topicId": 2,
+            "question": "ExpressJS là gì?",
+            "answers": [
+                "Framework của NodeJS",
+                "Thư viện React",
+                "Database",
+                "Giao thức HTTP"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "8",
+            "topicId": 2,
+            "question": "Middleware trong ExpressJS dùng để làm gì?",
+            "answers": [
+                "Xử lý yêu cầu trước khi vào route",
+                "Gửi email",
+                "Lưu dữ liệu",
+                "Tạo giao diện"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "9",
+            "topicId": 2,
+            "question": "Cách nào để đọc dữ liệu từ request body trong Express?",
+            "answers": [
+                "req.body",
+                "req.params",
+                "req.query",
+                "req.url"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "10",
+            "topicId": 2,
+            "question": "Mongoose dùng để làm gì?",
+            "answers": [
+                "Kết nối MongoDB",
+                "Chạy server",
+                "Tạo frontend",
+                "Xử lý UI"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "11",
+            "topicId": 3,
+            "question": "SQL là gì?",
+            "answers": [
+                "Ngôn ngữ truy vấn",
+                "Công cụ lập trình",
+                "Framework",
+                "Ngôn ngữ thiết kế"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "12",
+            "topicId": 3,
+            "question": "Lệnh nào dùng để lấy tất cả dữ liệu từ bảng?",
+            "answers": [
+                "SELECT *",
+                "GET ALL",
+                "FETCH",
+                "SHOW ALL"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "13",
+            "topicId": 3,
+            "question": "Khóa chính (Primary Key) dùng để làm gì?",
+            "answers": [
+                "Xác định duy nhất một dòng",
+                "Lưu trữ dữ liệu",
+                "Gán giá trị mặc định",
+                "Tạo index"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "14",
+            "topicId": 3,
+            "question": "Câu lệnh nào để xóa bảng trong SQL?",
+            "answers": [
+                "DROP TABLE",
+                "DELETE TABLE",
+                "REMOVE TABLE",
+                "CLEAR TABLE"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "15",
+            "topicId": 3,
+            "question": "Câu lệnh nào để thêm dữ liệu vào bảng?",
+            "answers": [
+                "INSERT INTO",
+                "ADD DATA",
+                "PUT DATA",
+                "STORE"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "16",
+            "topicId": 4,
+            "question": "Thuật toán sắp xếp nào nhanh nhất?",
+            "answers": [
+                "Quick Sort",
+                "Bubble Sort",
+                "Selection Sort",
+                "Insertion Sort"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "17",
+            "topicId": 4,
+            "question": "Big-O của thuật toán tìm kiếm nhị phân là gì?",
+            "answers": [
+                "O(log n)",
+                "O(n)",
+                "O(n^2)",
+                "O(1)"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "18",
+            "topicId": 4,
+            "question": "Cấu trúc dữ liệu nào hoạt động theo nguyên tắc LIFO?",
+            "answers": [
+                "Stack",
+                "Queue",
+                "Linked List",
+                "Tree"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "19",
+            "topicId": 4,
+            "question": "Cấu trúc dữ liệu nào hoạt động theo nguyên tắc FIFO?",
+            "answers": [
+                "Queue",
+                "Stack",
+                "Tree",
+                "Graph"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "20",
+            "topicId": 4,
+            "question": "Độ phức tạp trung bình của thuật toán Quick Sort là bao nhiêu?",
+            "answers": [
+                "O(n log n)",
+                "O(n^2)",
+                "O(n)",
+                "O(1)"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "21",
+            "topicId": 5,
+            "question": "Sự khác nhau giữa var, let và const trong JavaScript?",
+            "answers": [
+                "var có phạm vi function, let và const có phạm vi block.",
+                "var và let giống nhau, const khác hoàn toàn.",
+                "const có thể thay đổi giá trị sau khi khai báo.",
+                "let và const không thể dùng trong function."
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "22",
+            "topicId": 5,
+            "question": "React sử dụng cơ chế nào để tối ưu hóa việc cập nhật DOM?",
+            "answers": [
+                "Virtual DOM",
+                "Real DOM",
+                "Shadow DOM",
+                "Server-side Rendering"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "23",
+            "topicId": 5,
+            "question": "Hook nào trong React dùng để thực hiện side effects?",
+            "answers": [
+                "useEffect",
+                "useState",
+                "useReducer",
+                "useContext"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "24",
+            "topicId": 5,
+            "question": "CSS Flexbox có thuộc tính nào để căn giữa phần tử theo cả chiều dọc và ngang?",
+            "answers": [
+                "align-items và justify-content",
+                "display: block",
+                "grid-template-columns",
+                "position: absolute"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "25",
+            "topicId": 5,
+            "question": "Cách nào để gửi request API trong JavaScript?",
+            "answers": [
+                "fetch()",
+                "console.log()",
+                "document.querySelector()",
+                "setTimeout()"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "26",
+            "topicId": 5,
+            "question": "Cách nào để lưu trạng thái trong React mà không gây re-render?",
+            "answers": [
+                "useRef",
+                "useState",
+                "useEffect",
+                "useReducer"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "27",
+            "topicId": 5,
+            "question": "JavaScript có kiểu dữ liệu nào?",
+            "answers": [
+                "Number, String, Boolean, Object, Undefined, Null, Symbol, BigInt",
+                "Integer, Float, Char, Double",
+                "Object-Oriented, Functional",
+                "Primary, Secondary"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "28",
+            "topicId": 5,
+            "question": "Event nào dùng để bắt sự kiện khi người dùng nhập dữ liệu vào ô input?",
+            "answers": [
+                "onChange",
+                "onClick",
+                "onSubmit",
+                "onMouseOver"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "29",
+            "topicId": 5,
+            "question": "Cách nào để import module trong ES6?",
+            "answers": [
+                "import { moduleName } from 'file.js'",
+                "require('file.js')",
+                "include 'file.js'",
+                "load('file.js')"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "30",
+            "topicId": 5,
+            "question": "React Router dùng để làm gì?",
+            "answers": [
+                "Quản lý điều hướng trang",
+                "Tạo giao diện động",
+                "Xử lý state",
+                "Gửi request API"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "31",
+            "topicId": 5,
+            "question": "Cách nào để thêm class vào một phần tử trong React?",
+            "answers": [
+                "className",
+                "class",
+                "style",
+                "addClass()"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "32",
+            "topicId": 5,
+            "question": "State trong React có thể thay đổi trực tiếp không?",
+            "answers": [
+                "Không, phải dùng setState hoặc useState",
+                "Có, có thể thay đổi trực tiếp",
+                "Chỉ thay đổi trong componentDidMount",
+                "Không thể thay đổi"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "33",
+            "topicId": 5,
+            "question": "Cách nào để tạo component trong React?",
+            "answers": [
+                "Function Component hoặc Class Component",
+                "HTML file",
+                "JSON file",
+                "CSS file"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "34",
+            "topicId": 5,
+            "question": "Cách nào để truyền dữ liệu từ component cha xuống component con?",
+            "answers": [
+                "Props",
+                "State",
+                "Redux",
+                "useEffect"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "35",
+            "topicId": 5,
+            "question": "React Context API dùng để làm gì?",
+            "answers": [
+                "Chia sẻ dữ liệu giữa các component",
+                "Lưu trữ dữ liệu trên server",
+                "Kết nối với cơ sở dữ liệu",
+                "Quản lý vòng đời component"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "36",
+            "topicId": 5,
+            "question": "Cách nào để thực hiện lazy loading trong React?",
+            "answers": [
+                "React.lazy() và Suspense",
+                "useEffect",
+                "useState",
+                "import()"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "37",
+            "topicId": 5,
+            "question": "Cách nào để cập nhật state trong React mà không gây vấn đề về đồng bộ?",
+            "answers": [
+                "Sử dụng callback trong setState",
+                "Gán giá trị trực tiếp",
+                "Dùng biến toàn cục",
+                "Không thể cập nhật"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "38",
+            "topicId": 5,
+            "question": "Hàm map() trong JavaScript dùng để làm gì?",
+            "answers": [
+                "Duyệt và tạo mảng mới từ mảng cũ",
+                "Xóa phần tử trong mảng",
+                "Tìm phần tử trong mảng",
+                "Sắp xếp mảng"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "id": "39",
+            "topicId": 5,
+            "question": "Sự khác nhau giữa == và === trong JavaScript?",
+            "answers": [
+                "== chỉ so sánh giá trị, === so sánh cả kiểu dữ liệu",
+                "== nhanh hơn ===",
+                "Không có sự khác biệt",
+                "=== chỉ dùng trong ES6"
+            ],
+            "correctAnswer": 0
+        }
+    ],
+    "answers": [
+        {
+            "userId": 5,
+            "topicId": 1,
+            "answers": [
+                {
+                    "questionId": 1,
+                    "answer": 1
+                }
+            ],
+            "id": "1"
+        }
+    ]
 }
