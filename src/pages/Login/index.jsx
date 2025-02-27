@@ -1,8 +1,11 @@
+import { useDispatch } from "react-redux";
 import { setCookie } from "../../helpers/cookie";
 import { login } from "../../services/userService";
 import { useNavigate } from "react-router-dom"
+import { checkLogin } from "../../actions/login";
 function Login() {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     const handleSubmit = async (e) => {
         e.preventDefault();
         const email = e.target[0].value;
@@ -15,6 +18,7 @@ function Login() {
             setCookie("fullname", res[0].fullname, 1)
             setCookie("email", res[0].email, 1)
             setCookie("token", res[0].token, 1)
+            dispatch(checkLogin(true))
             navigate("/")
 
         } else {
