@@ -5,6 +5,7 @@ import Answers from "../pages/Answers";
 import Error404 from "../pages/Error404";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
+import Logout from "../pages/Logout";
 import Quiz from "../pages/Quiz";
 import Register from "../pages/Resgister";
 import Result from "../pages/Result";
@@ -48,6 +49,10 @@ export const routes = [
             {
                 path: "register",
                 element: <Register />
+            },
+            {
+                path: "logout",
+                element: <Logout />
             },
         ]
     }
