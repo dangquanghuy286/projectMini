@@ -1,0 +1,102 @@
+.layout-default {
+
+    // Phần header của layout
+    &__header {
+        background: greenyellow; // Đặt nền màu greenyellow cho header
+        display: flex; // Sử dụng flexbox để sắp xếp các phần tử bên trong
+        align-items: center; // Căn giữa các phần tử theo trục dọc
+        justify-content: space-between; // Chia khoảng cách đều giữa các phần tử (đẩy đầu và cuối về mép)
+        padding: 10px 20px; // Thêm khoảng cách bên trong: 10px trên/dưới, 20px trái/phải
+        position: sticky;
+        /* Giúp phần tử "dính" vào một vị trí khi cuộn */
+        top: 0;
+        /* Khi cuộn đến, phần tử sẽ dừng lại ở đỉnh trang */
+        z-index: 999;
+        /* Đảm bảo phần tử luôn hiển thị trên các thành phần khác */
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    }
+
+    // Phần menu của layout
+    &__menu {
+
+        // Định dạng danh sách <ul> trong menu
+        ul {
+            list-style: none; // Loại bỏ dấu đầu dòng mặc định
+            padding: 0; // Xóa padding mặc định của ul
+            margin: 0; // Xóa margin mặc định của ul
+            display: flex; // Hiển thị các mục trong danh sách theo hàng ngang
+        }
+
+        // Định dạng các mục danh sách <li> trong menu
+        li {
+            margin-left: 20px; // Thêm khoảng cách bên trái giữa các mục
+            text-decoration: none; // Loại bỏ các trang trí văn bản mặc định
+            position: relative; // Đặt vị trí relative để submenu (vị trí absolute) căn cứ vào đây
+        }
+
+        // Định dạng các liên kết <a> trong menu
+        a {
+            color: black; // Đặt màu chữ mặc định là đen
+            text-decoration: none; // Loại bỏ gạch chân mặc định của liên kết
+
+            // Khi liên kết có class "active" (ví dụ, khi sử dụng NavLink của React Router)
+            &.active {
+                color: aliceblue; // Đổi màu chữ thành aliceblue khi active
+            }
+
+            white-space: nowrap; // Ngăn ngắt dòng, giữ liên kết trên một dòng
+            display: block; // Hiển thị liên kết dưới dạng block (cho phép click toàn bộ vùng)
+            padding: 4px 10px; // Thêm khoảng cách bên trong cho liên kết
+        }
+
+        // Dropdown submenu (menu con)
+        &__submenu {
+            position: absolute; // Định vị tuyệt đối so với phần tử cha (li)
+            top: 100%; // Đặt submenu ngay dưới phần tử cha (100% chiều cao của phần tử cha)
+
+            left: -50%;
+            background: orangered; // Nền màu orangered cho submenu
+            flex-direction: column; // Sắp xếp các mục trong submenu theo cột
+            display: none !important; // Ẩn submenu theo mặc định (sử dụng !important để ưu tiên)
+            min-width: 150px; // Đặt chiều rộng tối thiểu cho submenu
+
+
+            // Định dạng các mục <li> bên trong submenu
+            li {
+                margin-left: 0 !important; // Loại bỏ khoảng cách bên trái cho các mục con (ưu tiên !important)
+
+                // Định dạng liên kết <a> bên trong các mục của submenu
+                a {
+                    padding: 8px 10px; // Thêm khoảng cách bên trong cho các liên kết trong submenu
+                    display: block; // Hiển thị liên kết dưới dạng block
+                    color: white; // Đặt màu chữ mặc định cho submenu là trắng
+                    text-align: left; // Căn trái nội dung văn bản
+                    transition: 0.3s all;
+
+                    // Chỉ thay đổi màu của liên kết khi hover trực tiếp vào liên kết đó
+                    &:hover {
+                        color: black; // Đổi màu thành đen khi hover vào liên kết
+                    }
+                }
+            }
+        }
+
+        // Hiển thị dropdown submenu khi hover vào phần tử li chứa nó
+        li:hover .layout-default__menu__submenu {
+            display: flex !important; // Khi hover vào li, hiển thị submenu với layout flex (ưu tiên !important)
+
+        }
+    }
+
+    // Phần main (nội dung chính) của layout
+    &__main {
+        padding: 20px; // Thêm khoảng cách bên trong cho nội dung chính
+    }
+
+    // Phần footer của layout
+    &__footer {
+        background: gainsboro; // Đặt nền màu gainsboro cho footer
+        text-align: center; // Căn giữa nội dung văn bản trong footer
+        padding: 10px 20px; // Thêm khoảng cách bên trong cho footer
+    }
+}

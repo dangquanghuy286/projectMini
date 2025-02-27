@@ -1,5 +1,7 @@
 
 import './App.css'
+import AllRoute from './components/AllRoute'
+
 
 function App() {
 
@@ -7,7 +9,7 @@ function App() {
   return (
 
     <>
-      APP
+      <AllRoute />
     </>
   )
 }
