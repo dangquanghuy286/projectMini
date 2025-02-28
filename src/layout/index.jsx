@@ -17,7 +17,7 @@ function LayoutDefault() {
                             <NavLink to="/" aria-label="Home">Home</NavLink>
                         </li>
                         {token && (<><li>
-                            <NavLink to="/topic" aria-label="Topic">Topic</NavLink>
+                            <NavLink to="/topics" aria-label="Topic">Topic</NavLink>
                         </li>
                             <li>
                                 <NavLink to="/answers" aria-label="Answers">Answers</NavLink>

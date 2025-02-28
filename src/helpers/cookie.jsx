@@ -20,13 +20,13 @@ export function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
     var expires = "expires=" + d.toUTCString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
+    document.cookie = `${cname}=${cvalue}; ${expires}; path=/`;
 }
 // Hết Hàm tạo cookie
 
 // Hàm xóa cookie
 export function deleteCookie(cname) {
-    document.cookie = `${cname}=; expires=Thu, 01 Jan 1970 00:00:00 UTC`;
+    document.cookie = `${cname}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/`;
 }
 // Hết Hàm xóa cookie
 
@@ -35,10 +35,9 @@ export function deleteAllCookies() {
     const cookies = document.cookie.split(";");
 
     for (let i = 0; i < cookies.length; i++) {
-        const cookie = cookies[i];
-        const eqPos = cookie.indexOf("=");
-        const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+        const cookie = cookies[i].split("=")[0].trim();
+        document.cookie = `${cookie}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=${document.location.hostname}`;
     }
 }
+
 // Hết phần Xóa hết cookie

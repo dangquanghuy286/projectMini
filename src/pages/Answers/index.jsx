@@ -25,28 +25,35 @@ function Answers() {
         };
         fetchApi(); // Gọi hàm fetch dữ liệu
     }, []); // Chạy một lần khi component mount
+    console.log(dataAnswers);
 
     return (
         <>
             <h2>Danh sách bài đã luyện tập</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Topic</th> {/* Cột hiển thị ID của chủ đề */}
-                        <th>Answer</th> {/* Cột hiển thị tên của chủ đề */}
-                        <th>Details</th> {/* Cột chứa link để xem chi tiết */}
-                    </tr>
-                </thead>
-                <tbody>
-                    {dataAnswers.map(item => (
-                        <tr key={item.id}>
-                            <td>{item.id}</td> {/* Hiển thị ID của chủ đề */}
-                            <td>{item.name}</td> {/* Hiển thị tên chủ đề */}
-                            <td><Link to={"/result/" + item.id}>Xem chi tiết</Link></td> {/* Tạo link đến trang chi tiết */}
+            {dataAnswers.length > 0 ? (
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Topic</th>
+                            <th>Details</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {dataAnswers.map((item, index) => (
+                            <tr key={`${item.id}-${index}`}>
+                                <td>{index + 1}</td>
+                                <td>{item.name || "Không có tên"}</td>
+                                <td>
+                                    <Link to={`/result/${item.id}`}>Xem chi tiết</Link>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            ) : (
+                <p>Chưa có bài luyện tập nào.</p>
+            )}
         </>
     );
 }
