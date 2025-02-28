@@ -46,15 +46,24 @@ function Quiz() {
         }
 
         let options = {
-            id: Date.now(),
+
             userId: parseInt(getCookie("id")),
             topicId: parseInt(params.id),
             answers: selectedAnswers
 
         }
-        const res = await createAnswer(options);
-        if (res) {
-            navigate(`/result/${res.id}`)
+        try {
+            const res = await createAnswer(options);
+            console.log("Phản hồi từ API:", res);
+
+            if (res && res.id) {
+                navigate(`/result/${res.id}`);
+            } else {
+                throw new Error("API không trả về ID hợp lệ.");
+            }
+        } catch (err) {
+            console.error("Lỗi khi gửi câu trả lời:", err);
+            alert("Có lỗi xảy ra khi nộp bài. Vui lòng thử lại.");
         }
     }
     return (

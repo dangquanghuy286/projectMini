@@ -1,14 +1,14 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "fullname": "Nguyễn Văn A",
       "email": "nguyenvana@example.com",
       "password": "123456",
       "token": "abc123"
     },
     {
-      "id": 2,
+      "id": "2",
       "fullname": "Đặng Hữu Quang Huy",
       "email": "huydang.280603@gmail.com",
       "password": "huyhuyhuy111",
@@ -17,29 +17,29 @@
   ],
   "topics": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Lập trình ReactJS"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Lập trình NodeJS"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Cơ sở dữ liệu"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Thuật toán"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Phỏng vấn Frontend"
     }
   ],
   "questions": [
     {
-      "id": 1,
+      "id": "1",
       "topicId": 1,
       "question": "React là gì?",
       "answers": [
@@ -51,7 +51,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 2,
+      "id": "2",
       "topicId": 1,
       "question": "JSX dùng để làm gì?",
       "answers": [
@@ -63,7 +63,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 3,
+      "id": "3",
       "topicId": 1,
       "question": "Hook nào dùng để quản lý state?",
       "answers": [
@@ -75,7 +75,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 4,
+      "id": "4",
       "topicId": 1,
       "question": "Component nào trong React có thể tái sử dụng?",
       "answers": [
@@ -87,7 +87,7 @@
       "correctAnswer": 2
     },
     {
-      "id": 5,
+      "id": "5",
       "topicId": 1,
       "question": "Redux dùng để làm gì?",
       "answers": [
@@ -99,7 +99,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 6,
+      "id": "6",
       "topicId": 2,
       "question": "NodeJS là gì?",
       "answers": [
@@ -111,7 +111,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 7,
+      "id": "7",
       "topicId": 2,
       "question": "ExpressJS là gì?",
       "answers": [
@@ -123,7 +123,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 8,
+      "id": "8",
       "topicId": 2,
       "question": "Middleware trong ExpressJS dùng để làm gì?",
       "answers": [
@@ -135,7 +135,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 9,
+      "id": "9",
       "topicId": 2,
       "question": "Cách nào để đọc dữ liệu từ request body trong Express?",
       "answers": [
@@ -147,7 +147,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 10,
+      "id": "10",
       "topicId": 2,
       "question": "Mongoose dùng để làm gì?",
       "answers": [
@@ -159,7 +159,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 11,
+      "id": "11",
       "topicId": 3,
       "question": "SQL là gì?",
       "answers": [
@@ -171,7 +171,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 12,
+      "id": "12",
       "topicId": 3,
       "question": "Lệnh nào dùng để lấy tất cả dữ liệu từ bảng?",
       "answers": [
@@ -183,7 +183,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 13,
+      "id": "13",
       "topicId": 3,
       "question": "Khóa chính (Primary Key) dùng để làm gì?",
       "answers": [
@@ -195,7 +195,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 14,
+      "id": "14",
       "topicId": 3,
       "question": "Câu lệnh nào để xóa bảng trong SQL?",
       "answers": [
@@ -207,7 +207,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 15,
+      "id": "15",
       "topicId": 3,
       "question": "Câu lệnh nào để thêm dữ liệu vào bảng?",
       "answers": [
@@ -219,7 +219,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 16,
+      "id": "16",
       "topicId": 4,
       "question": "Thuật toán sắp xếp nào nhanh nhất?",
       "answers": [
@@ -231,7 +231,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 17,
+      "id": "17",
       "topicId": 4,
       "question": "Big-O của thuật toán tìm kiếm nhị phân là gì?",
       "answers": [
@@ -243,7 +243,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 18,
+      "id": "18",
       "topicId": 4,
       "question": "Cấu trúc dữ liệu nào hoạt động theo nguyên tắc LIFO?",
       "answers": [
@@ -255,7 +255,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 19,
+      "id": "19",
       "topicId": 4,
       "question": "Cấu trúc dữ liệu nào hoạt động theo nguyên tắc FIFO?",
       "answers": [
@@ -267,7 +267,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 20,
+      "id": "20",
       "topicId": 4,
       "question": "Độ phức tạp trung bình của thuật toán Quick Sort là bao nhiêu?",
       "answers": [
@@ -279,7 +279,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 21,
+      "id": "21",
       "topicId": 5,
       "question": "Sự khác nhau giữa var, let và const trong JavaScript?",
       "answers": [
@@ -291,7 +291,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 22,
+      "id": "22",
       "topicId": 5,
       "question": "React sử dụng cơ chế nào để tối ưu hóa việc cập nhật DOM?",
       "answers": [
@@ -303,7 +303,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 23,
+      "id": "23",
       "topicId": 5,
       "question": "Hook nào trong React dùng để thực hiện side effects?",
       "answers": [
@@ -315,7 +315,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 24,
+      "id": "24",
       "topicId": 5,
       "question": "CSS Flexbox có thuộc tính nào để căn giữa phần tử theo cả chiều dọc và ngang?",
       "answers": [
@@ -327,7 +327,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 25,
+      "id": "25",
       "topicId": 5,
       "question": "Cách nào để gửi request API trong JavaScript?",
       "answers": [
@@ -339,7 +339,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 26,
+      "id": "26",
       "topicId": 5,
       "question": "Cách nào để lưu trạng thái trong React mà không gây re-render?",
       "answers": [
@@ -351,7 +351,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 27,
+      "id": "27",
       "topicId": 5,
       "question": "JavaScript có kiểu dữ liệu nào?",
       "answers": [
@@ -363,7 +363,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 28,
+      "id": "28",
       "topicId": 5,
       "question": "Event nào dùng để bắt sự kiện khi người dùng nhập dữ liệu vào ô input?",
       "answers": [
@@ -375,7 +375,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 29,
+      "id": "29",
       "topicId": 5,
       "question": "Cách nào để import module trong ES6?",
       "answers": [
@@ -387,7 +387,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 30,
+      "id": "30",
       "topicId": 5,
       "question": "React Router dùng để làm gì?",
       "answers": [
@@ -399,7 +399,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 31,
+      "id": "31",
       "topicId": 5,
       "question": "Cách nào để thêm class vào một phần tử trong React?",
       "answers": [
@@ -411,7 +411,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 32,
+      "id": "32",
       "topicId": 5,
       "question": "State trong React có thể thay đổi trực tiếp không?",
       "answers": [
@@ -423,7 +423,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 33,
+      "id": "33",
       "topicId": 5,
       "question": "Cách nào để tạo component trong React?",
       "answers": [
@@ -435,7 +435,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 34,
+      "id": "34",
       "topicId": 5,
       "question": "Cách nào để truyền dữ liệu từ component cha xuống component con?",
       "answers": [
@@ -447,7 +447,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 35,
+      "id": "35",
       "topicId": 5,
       "question": "React Context API dùng để làm gì?",
       "answers": [
@@ -459,7 +459,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 36,
+      "id": "36",
       "topicId": 5,
       "question": "Cách nào để thực hiện lazy loading trong React?",
       "answers": [
@@ -471,7 +471,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 37,
+      "id": "37",
       "topicId": 5,
       "question": "Cách nào để cập nhật state trong React mà không gây vấn đề về đồng bộ?",
       "answers": [
@@ -483,7 +483,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 38,
+      "id": "38",
       "topicId": 5,
       "question": "Hàm map() trong JavaScript dùng để làm gì?",
       "answers": [
@@ -495,7 +495,7 @@
       "correctAnswer": 0
     },
     {
-      "id": 39,
+      "id": "39",
       "topicId": 5,
       "question": "Sự khác nhau giữa == và === trong JavaScript?",
       "answers": [
@@ -529,10 +529,10 @@
           "answer": 3
         }
       ],
-      "id": 1
+      "id": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 3,
       "topicId": 1,
       "answers": [
@@ -559,7 +559,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 3,
       "topicId": 1,
       "answers": [
@@ -586,7 +586,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 3,
       "topicId": 1,
       "answers": [
@@ -613,7 +613,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "userId": 3,
       "topicId": 1,
       "answers": [
@@ -640,7 +640,7 @@
       ]
     },
     {
-      "id": 1740769242749,
+      "id": "1740769242749",
       "userId": 3,
       "topicId": 1,
       "answers": [
@@ -655,6 +655,249 @@
         {
           "questionId": 3,
           "answer": 1
+        },
+        {
+          "questionId": 4,
+          "answer": 0
+        },
+        {
+          "questionId": 5,
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "1740770850850",
+      "userId": 3,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 0
+        },
+        {
+          "questionId": 2,
+          "answer": 2
+        },
+        {
+          "questionId": 3,
+          "answer": 1
+        },
+        {
+          "questionId": 4,
+          "answer": 2
+        },
+        {
+          "questionId": 5,
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "1740771026370",
+      "userId": 3,
+      "topicId": 3,
+      "answers": [
+        {
+          "questionId": 11,
+          "answer": 0
+        },
+        {
+          "questionId": 12,
+          "answer": 0
+        },
+        {
+          "questionId": 13,
+          "answer": 0
+        },
+        {
+          "questionId": 14,
+          "answer": 0
+        },
+        {
+          "questionId": 15,
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": 1740774057384,
+      "userId": 3,
+      "topicId": 3,
+      "answers": [
+        {
+          "questionId": 11,
+          "answer": 0
+        },
+        {
+          "questionId": 12,
+          "answer": 0
+        },
+        {
+          "questionId": 13,
+          "answer": 0
+        },
+        {
+          "questionId": 14,
+          "answer": 0
+        },
+        {
+          "questionId": 15,
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": 1740774109797,
+      "userId": 3,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 0
+        },
+        {
+          "questionId": 2,
+          "answer": 0
+        },
+        {
+          "questionId": 3,
+          "answer": 0
+        },
+        {
+          "questionId": 4,
+          "answer": 0
+        },
+        {
+          "questionId": 5,
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": 1740774146796,
+      "userId": 3,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 0
+        },
+        {
+          "questionId": 2,
+          "answer": 0
+        },
+        {
+          "questionId": 3,
+          "answer": 0
+        },
+        {
+          "questionId": 4,
+          "answer": 0
+        },
+        {
+          "questionId": 5,
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": 1740774176276,
+      "userId": 3,
+      "topicId": 2,
+      "answers": [
+        {
+          "questionId": 6,
+          "answer": 0
+        },
+        {
+          "questionId": 7,
+          "answer": 0
+        },
+        {
+          "questionId": 8,
+          "answer": 0
+        },
+        {
+          "questionId": 9,
+          "answer": 0
+        },
+        {
+          "questionId": 10,
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "5c8e",
+      "userId": 3,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 0
+        },
+        {
+          "questionId": 2,
+          "answer": 0
+        },
+        {
+          "questionId": 3,
+          "answer": 0
+        },
+        {
+          "questionId": 4,
+          "answer": 0
+        },
+        {
+          "questionId": 5,
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "58e5",
+      "userId": 3,
+      "topicId": 3,
+      "answers": [
+        {
+          "questionId": 11,
+          "answer": 0
+        },
+        {
+          "questionId": 12,
+          "answer": 0
+        },
+        {
+          "questionId": 13,
+          "answer": 0
+        },
+        {
+          "questionId": 14,
+          "answer": 0
+        },
+        {
+          "questionId": 15,
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "c46a",
+      "userId": 3,
+      "topicId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 0
+        },
+        {
+          "questionId": 2,
+          "answer": 0
+        },
+        {
+          "questionId": 3,
+          "answer": 0
         },
         {
           "questionId": 4,

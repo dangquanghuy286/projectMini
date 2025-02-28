@@ -22,10 +22,10 @@ export const routes = [
             }, {
                 element: <PrivateRoutes />,
                 children: [{
-                    path: "topics",
+                    path: "topics/",
                     element: <Topic />
                 }, {
-                    path: "answers",
+                    path: "answers/",
                     element: <Answers />
                 },
                 {

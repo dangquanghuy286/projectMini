@@ -5,3 +5,7 @@ export const getAnswersByUserId = async () => {
     const res = await get(`answers?userId=${userId}`)
     return res;
 }
+export const getListAnswer = async (id) => {
+    const res = await get(`answers/${id}`)
+    return res;
+}
