@@ -4,10 +4,8 @@ import { generateToken } from "../../helpers/generateTonken";
 
 function Register() {
     const navigate = useNavigate();
-
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         const fullname = e.target[0].value;
         const email = e.target[1].value;
         const password = e.target[2].value;

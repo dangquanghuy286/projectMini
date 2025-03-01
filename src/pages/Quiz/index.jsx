@@ -31,7 +31,7 @@ function Quiz() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(e);
+
         let selectedAnswers = [];
         for (let i = 0; i < e.target.elements.length; i++) {
             if (e.target.elements[i].checked) {
@@ -54,7 +54,7 @@ function Quiz() {
         }
         try {
             const res = await createAnswer(options);
-            console.log("Phản hồi từ API:", res);
+
 
             if (res && res.id) {
                 navigate(`/result/${res.id}`);

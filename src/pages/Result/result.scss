@@ -1,0 +1,29 @@
+.answer {
+    &__list {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &__item--selected {
+        color: rgb(6, 9, 211);
+        font-weight: 700;
+    }
+
+    &__item--result {
+        color: rgb(248, 0, 0);
+        font-weight: 700;
+    }
+
+    &__tag--true {
+        color: rgb(8, 226, 63);
+    }
+
+    &__tag--false {
+        color: rgb(226, 22, 8);
+    }
+
+}
